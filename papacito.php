@@ -104,7 +104,7 @@ class papacito {
 					// The next chunk of the search string is the married name.
 					// Fall through to the SRA block for handing that.
 				case 'SRA':
-					// This is the abbreviation for Seniora, which is an indicator that the married name is next.
+					// This is the abbreviation for Senora, which is an indicator that the married name is next.
 					$pointer = array_search('married', $fields);
 					
 					// Do nothing else and get the next token
@@ -120,10 +120,10 @@ class papacito {
 		}
 	}
 	
-	// Public functions for getting
-	// values from the private variables.
+	// Public functions for getting values from the private variables.
 	/**
 	 * Function to return the raw last name passed to the constructor at instantiation.
+	 *
 	 * @return string raw_last_name
 	 */
 	public function get_raw_name() {
@@ -132,6 +132,7 @@ class papacito {
 	
 	/**
 	 * Function to return the maternal name.
+	 *
 	 * @return string maternal_name
 	 */
 	public function get_maternal() {
@@ -140,6 +141,7 @@ class papacito {
 	
 	/**
 	 * Function to return the paternal name.
+	 *
 	 * @return string paternal_name
 	 */	
 	public function get_paternal() {
@@ -148,6 +150,7 @@ class papacito {
 	
 	/**
 	 * Function to return the married name.
+	 *
 	 * @return string married_name
 	 */	
 	public function get_married() {
@@ -156,6 +159,7 @@ class papacito {
 	
 	/**
 	 * Function to return a flag if the name indicates this is a widow.
+	 *
 	 * @return bool is_widow
 	 */
 	public function is_widow() {
@@ -164,6 +168,7 @@ class papacito {
 	
 	/**
 	 * Function to return the excess name tokens remaining at the end of parsing.
+	 *
 	 * @return string excess_name
 	 */	
 	public function get_excess() {
