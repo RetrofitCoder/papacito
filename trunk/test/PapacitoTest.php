@@ -92,17 +92,8 @@ class PapacitoTest extends PHPUnit_Framework_TestCase {
 	}
 	
 	private function check_name($function, $err_msg) {
-//print_r($this->names);
 		foreach ( $this->names as $name ) {
 			$this->obj = new Papacito($name[self::FUNC_RAW_NAME]);
-//echo "raw name for constructor is ", $name['raw_name'], "\n";
-//echo "function is $function\n";
-//echo "full coded: ", $this->obj->get_raw_name(), "\n";
-//echo "method call is ", $this->obj->$function, "\n";
-//echo "attribute is $attribute\n";
-//echo "value for attribute is ", $name[$attribute], "\n";
-//$r = $this->obj->$function();
-//echo "r is $r\n";
 			$this->assertEquals($name[$function], $this->obj->$function(), $err_msg);
 		}
 			
