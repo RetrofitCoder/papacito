@@ -25,6 +25,7 @@ class PapacitoTest extends PHPUnit_Framework_TestCase {
 	}
 	
 	function setup() {
+		$this->set_names('Sanchez', 'Sanchez', '', '', false, '');
 		$this->set_names('Sanchez Rivera', 'Sanchez', 'Rivera', '', false, '');
 		$this->set_names('Ortega y Gasset', 'Ortega', 'Gasset', '', false, '');
 		$this->set_names('Lopez de la Cruz', 'Lopez', 'de la Cruz', '', false, '');
@@ -34,6 +35,7 @@ class PapacitoTest extends PHPUnit_Framework_TestCase {
 		$this->set_names('Lopez Saenz vda. de Portillo', 'Lopez', 'Saenz', 'Portillo', true, '');
 		$this->set_names(' Espinoza  de Rocha', 'Espinoza', 'de Rocha', '', false, '');
 		$this->set_names('Rivera del Rosario', 'Rivera', 'del Rosario', '', false, '');
+		$this->set_names('Batista Ortega sra. del Monte Excessito', 'Batista', 'Ortega', 'del Monte', false, 'Excessito');
 	}
 	
 	function teardown() {

@@ -50,7 +50,7 @@ class papacito {
 	 */
 	private function _parse() {
 		// Set up an array of the properties that tokens of the full last name could be assigned to.
-		$fields = array('paternal', 'maternal', 'married');
+		$fields = array('paternal', 'maternal', 'married', 'excess');
 		
 		// Internal pointer of where we are in the $fields array.
 		$pointer = 0;
