@@ -1,0 +1,1 @@
+Papacito is a PHP class that will parse Spanish surnames into patronymic, matronymic, and married sections.  The rules for parsing follow those outlined on wikipedia ( http://en.wikipedia.org/wiki/Spanish_naming_customs ).
